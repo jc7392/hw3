@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h1>Places I've Been</h1>
+
+  <ul>
+    <% @places.each do |place| %>
+        <%= link_to place.name, place %>
+        <br>
+        <br>
+    <% end %>
+    <br>
+    <br>
+    <%= link_to "New Place", new_place_path %>
+  </ul>
+
+</div>
